@@ -30,12 +30,16 @@ header img{
 #shade h1{
 	/* padding-top: 10%; */
 }
+/* _____________________________ Navbar _____________________________________ */
+.purple{
+	background-color: #4F0474;
+}
 /* __________________________Person section____________________________ */
 .container{
 	width: 100%;
 	background-color: white; 
 	padding-top: 20px;
-	padding-bottom: 150px;
+	padding-bottom: 10%;
 }
 
 .pic{
@@ -84,7 +88,7 @@ button{
 }
 /* _____________________________Footer_______________________________ */
 footer{
-	height: 150px;
+	height: 12%;
 	width: 90%;
 	position: fixed;
 	bottom: 0;
@@ -94,5 +98,5 @@ footer{
 }
 footer img{
 	width: 25%;
-	margin-top: 50px;
+	/* margin-top: 50px; */
 }
