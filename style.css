@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	font-family: 'Chivo', sans-serif;
+}
+body{ 
+	background-image: url(img/computer.jpg);
+	background-size: 100%; 
+}
+/* ____________________________Header_________________________________ */
+header{
+	width: 100%;
+	height: 150px;
+	background-color: #7B2389;
+	text-align: center;
+}
+header img{
+	margin-top: 30px;
+	width: 40%;
+}
+/* __________________________Hero Section_____________________________ */
+#shade{
+	width: 100%;
+	height: 659px;
+	background-color: rgba(123,35,138,0.3);
+	color: white;
+	text-align: center;
+	font-size: 3em;
+	padding-top: 10%;
+}
+#shade h1{
+	/* padding-top: 10%; */
+}
+/* __________________________Person section____________________________ */
+.container{
+	width: 100%;
+	background-color: white; 
+	padding-top: 20px;
+	padding-bottom: 150px;
+}
+
+.pic{
+	width: 40%;
+	margin: 20px;
+	float: left;
+}
+
+.col{
+	background-color: rgba(123,35,138,0.3);
+	border-radius: 10px;
+	border: solid rgba(123,35,138,1) 5px;
+	padding: 10px;
+	/* height: 250px; */
+}
+.text{
+	font-size: 1.5em;
+	margin-top: 5%;
+}
+/* 
+button{
+	width: 75px;
+	height: 35px;
+	background-color: #A3D6CF;
+	border: solid gray 1px;
+	border-radius: 10px;
+	font-size: 1.3em;
+	font-weight: bold;
+	float: right;
+	margin-top: 250px;
+	margin-right: 50px;
+} */
+/* .box h1{
+	float: right;
+	margin-top: 235px;
+	margin-right: 10px;
+	color: red;
+	font-weight: bold;
+	font-size: 3.5em;
+} */
+.heart{
+	width: 40px;
+}
+.like{
+	padding: 10px;
+}
+/* _____________________________Footer_______________________________ */
+footer{
+	height: 150px;
+	width: 90%;
+	position: fixed;
+	bottom: 0;
+	left: 5%;
+	text-align: center;
+
+}
+footer img{
+	width: 25%;
+	margin-top: 50px;
+}
