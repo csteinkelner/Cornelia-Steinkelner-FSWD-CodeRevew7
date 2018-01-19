@@ -47,39 +47,28 @@ header img{
 	margin: 20px;
 	float: left;
 }
-
+.row{
+	margin: 5px;
+}
 .col{
 	background-color: rgba(123,35,138,0.3);
 	border-radius: 10px;
 	border: solid rgba(123,35,138,1) 5px;
 	padding: 10px;
-	/* height: 250px; */
+	margin-bottom: 5px;
 }
 .text{
 	font-size: 1.5em;
 	margin-top: 5%;
 }
-/* 
+
 button{
 	width: 75px;
 	height: 35px;
 	background-color: #A3D6CF;
-	border: solid gray 1px;
-	border-radius: 10px;
 	font-size: 1.3em;
 	font-weight: bold;
-	float: right;
-	margin-top: 250px;
-	margin-right: 50px;
-} */
-/* .box h1{
-	float: right;
-	margin-top: 235px;
-	margin-right: 10px;
-	color: red;
-	font-weight: bold;
-	font-size: 3.5em;
-} */
+} 
 .heart{
 	width: 40px;
 }

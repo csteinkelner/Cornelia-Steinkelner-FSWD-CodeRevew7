@@ -2,14 +2,14 @@
 
 class Person {
 
-	constructor(name, surname, favoritePerformers, age, myPhoto,like, gender) {
+	constructor(name, surname, age, myPhoto, relation,like, gender) {
 		this.name = name;
 		this.surname = surname;
-		this.favoritePerformers = favoritePerformers;
 		this.age = age;
 		this.myPhoto = myPhoto;
 		this.like = like;
 		this.gender = gender;
+		this.relation = relation;
 	}
 
 	render() {
@@ -37,15 +37,29 @@ class Person {
 	}
 }
 
+var Gender = ["Male","Female","Not specified"]
+
 var allPersons = [
-	new Person("John", "Doe", ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
-	25,"img/boy1.jpg",0,"male"),
-	new Person("Jane", "Walter", ["Justin Bieber", "Katy Perry", "Rihanna"],
-	24,"img/girl1.jpg",0,"female"),
-	new Person("Christine", "Mayer", ["Shakira", "Imagine Dragons", "Green day"],
-	26,"img/girl2.jpg",0,"female"),
-	new Person("Tomas", "Stein", ["Pink", "Mariah Carey", "Rita Ora"],
-	27,"img/boy2.jpg",0,"male"),
+	new Person("John", "Doe", 25,"img/P05.jpg", false, 0,Gender[0]),
+	new Person("Jane", "Walter", 24,"img/P01.jpg", false, 0,Gender[1]),
+	new Person("Christine", "Mayer", 26,"img/P03.jpg", false, 0,Gender[2]),
+	new Person("Thomas", "Stein", 27,"img/P02.jpg", false, 0,Gender[0]),
+	new Person("Sabine", "Holm", 23, "img/P04.jpg", false, 0, Gender[1]),
+	new Person("Tom", "Sparow", 20, "img/P06.jpg", true, 0, Gender[0]),
+	new Person("Betty", "Strudel", 25, "img/P07.jpg", false, 0, Gender[1]),
+	new Person("Stella", "Blum", 18, "img/P09.jpg", false,0,Gender[1]),
+	new Person("Tanja", "Gries", 27, "img/P10.jpg", false,0,Gender[1]),
+	new Person("Marino", "Gonzales", 40, "img/P11.jpg", false,0,Gender[0]),
+	new Person("Stefan", "Raster", 30, "img/P12.jpg", false,0,Gender[0]),
+	new Person("Ronald", "Kamora", 28, "img/P13.jpg", false,0,Gender[0]),
+	new Person("Lysia", "Ruff", 5, "img/P14.jpg", false,0,Gender[2]),
+	new Person("John", "Gray", 35, "img/P15.jpg", true,0,Gender[0]),
+	new Person("Josiah", "Fuchs", 45, "img/P16.jpg", false,0,Gender[0]),
+	new Person("Farid", "Kle", 60, "img/P17.jpg", false,0,Gender[0]),
+	new Person("Sean", "Migod", 42, "img/P18.jpg", false,0,Gender[0]),
+	new Person("Sebastian", "Mark", 25, "img/P19.jpg", false,0,Gender[0]),
+	new Person("Magrid", "Flabonka", 71,"img/P20.jpg", false,0,Gender[1]),
+	new Person("Lucy", "Meh", 7,"img/P21.jpg", false,0,Gender[1]),	
 ];
 
 
@@ -86,7 +100,7 @@ function showOnlyMales() {
   let place2 = document.getElementById("row");
   for (let i = 0; i < allPersons.length; i++) {
 
-    if (allPersons[i].gender === "male") {
+    if (allPersons[i].gender === Gender[0]) {
     place2.innerHTML += allPersons[i].render();
     }
   }
@@ -96,7 +110,7 @@ function showOnlyFemales() {
   let place2 = document.getElementById("row");
   for (let i = 0; i < allPersons.length; i++) {
 
-    if (allPersons[i].gender === "female") {
+    if (allPersons[i].gender === Gender[1]) {
     place2.innerHTML += allPersons[i].render();
     }
   }
