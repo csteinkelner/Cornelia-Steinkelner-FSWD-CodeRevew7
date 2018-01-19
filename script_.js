@@ -28,7 +28,7 @@ class Person {
 			<div class='row'>
 				<div class='col-4 col-md-offset-4 col-lg-offset-4 col-sm-offset-4 col-offset-3 like'>
 					<button type="submit" class='btn'>Like</button>
-					${this.likes}
+					<span id='likes'>${this.like}</span>
 					<img src='img/like.png' class='heart'>
 				</div>
 			</div>
@@ -82,9 +82,10 @@ $(document).ready( function() {
 
 	for(let i = 0; i < buttons.length; ++i ) {
 		buttons.eq(i).click(function() {
-				this.likes++
-			}
-		);
+				var L = allPersons[i].like;
+				L++;
+				$("#likes").html(L);
+			});
 	}
 });
 //______________sort___________________________________________
