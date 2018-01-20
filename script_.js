@@ -84,28 +84,28 @@ $(document).ready( function() {
 //______________sort___________________________________________
 
 function showAll() {
-  let place = document.getElementById("row");
-  for (let i = 0; i < allPersons.length; i++) {
-	place.innerHTML += allPersons[i].render();
+	let place = document.getElementById("row");
+	for (let i = 0; i < allPersons.length; i++) {
+		place.innerHTML += allPersons[i].render();
 };
 }
 
 function showOnlyMales() {
-  let place2 = document.getElementById("row");
-  for (let i = 0; i < allPersons.length; i++) {
+	let place2 = document.getElementById("row");
+	for (let i = 0; i < allPersons.length; i++) {
 
-    if (allPersons[i].gender === Gender[0]) {
-    place2.innerHTML += allPersons[i].render();
-    }
-  }
+		if (allPersons[i].gender === Gender[0]) {
+			place2.innerHTML += allPersons[i].render();
+		}
+	}
 }
 
 function showOnlyFemales() {
-  let place2 = document.getElementById("row");
-  for (let i = 0; i < allPersons.length; i++) {
+	let place2 = document.getElementById("row");
+	for (let i = 0; i < allPersons.length; i++) {
 
-    if (allPersons[i].gender === Gender[1]) {
-    place2.innerHTML += allPersons[i].render();
-    }
-  }
+		if (allPersons[i].gender === Gender[1]) {
+		place2.innerHTML += allPersons[i].render();
+		}
+	}
 }
