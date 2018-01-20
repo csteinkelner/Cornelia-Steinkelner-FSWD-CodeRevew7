@@ -1,5 +1,6 @@
 // alert("I load!")
 
+// class with constructor to create the columns with data
 class Person {
 
 	constructor(name, surname, age, myPhoto, relation,like, gender) {
@@ -28,7 +29,7 @@ class Person {
 			<div class='row'>
 				<div class='col-4 col-md-offset-4 col-lg-offset-4 col-sm-offset-4 col-offset-3 like'>
 					<button type="submit" class='btn'>Like</button>
-					<span id='likes'>${this.like}</span>
+					<span class='likes'>${this.like}</span>
 					<img src='img/like.png' class='heart'>
 				</div>
 			</div>
@@ -37,6 +38,7 @@ class Person {
 	}
 }
 
+// Arrays of Data _____________________________________________
 var Gender = ["Male","Female","Not specified"]
 
 var allPersons = [
@@ -64,29 +66,20 @@ var allPersons = [
 
 
 // __________________________likes__________________________________
-// $(".btn").click(function(){
-// 	var L = allPersons[i].likes;
-// 	L ++;
-// 	this.likes = L;
-// })
-
-// for(let i = 0; i < allPersons.length; i++){
-// 	$(".btn").click(function(){
-// 		var L = allPersons[i].likes;
-// 		L ++;
-// 		this.likes = L;
-// 	})
-// }
+// first klick doesn't work, on second klick it starts working...
 $(document).ready( function() {
-	var buttons = $('.btn');
+	var buttons = $(".btn");
+	var likes = $(".likes");
 
-	for(let i = 0; i < buttons.length; ++i ) {
+	for(let i = 0; i < buttons.length; i++) {
 		buttons.eq(i).click(function() {
-				var L = allPersons[i].like;
-				L++;
-				$("#likes").html(L);
-			});
+
+			var L = allPersons[i].like++;
+			$(likes.eq(i)).html(L);   //inserting the new likenumber in the right like
+
+		});
 	}
+
 });
 //______________sort___________________________________________
 

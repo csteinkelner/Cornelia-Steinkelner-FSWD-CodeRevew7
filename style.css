@@ -68,12 +68,16 @@ button{
 	background-color: #A3D6CF;
 	font-size: 1.3em;
 	font-weight: bold;
+	padding-bottom: 15px;
 } 
 .heart{
 	width: 40px;
+	padding-bottom: 15px;
 }
 .likes{
 	padding: 10px;
+	font-size: 3em;
+	color: red;
 }
 /* _____________________________Footer_______________________________ */
 footer{
